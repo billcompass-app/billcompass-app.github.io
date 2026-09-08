@@ -173,7 +173,7 @@ PRIVACY = f'''
   <p>Nothing. Bill Compass does not gather usage data, device identifiers, crash reports, contacts, location or any other personal information, and it contains no analytics or advertising software.</p>
 
   <h3>Where your information lives</h3>
-  <p>Bills, payments, tags and income are stored on your device. If you are signed in to iCloud, they also sync through Apple's CloudKit to your <em>private</em> iCloud database, so the same bills appear on your other devices. That database belongs to your Apple Account. The developer has no access to it and no way to read what is in it.</p>
+  <p>Bills, payments and tags are stored on your device. If you are signed in to iCloud, they also sync through Apple's CloudKit to your <em>private</em> iCloud database, so the same bills appear on your other devices. That database belongs to your Apple Account. The developer has no access to it and no way to read what is in it.</p>
   <p>Settings — the theme, light or dark, the background, how bills are arranged, your reminder preferences — are stored on the device they were chosen on and are not synced.</p>
 
   <h3>Reminders</h3>
@@ -183,7 +183,7 @@ PRIVACY = f'''
   <p>If you choose a photo as the app's background, it is copied into the app's own storage on that device and used only to draw the background. It is not synced and never leaves the device.</p>
 
   <h3>Backups you make yourself</h3>
-  <p>Bill Compass can export your bills, payments, tags and income to a CSV file. That file goes wherever you send it and is then in your hands. The app does not upload it anywhere.</p>
+  <p>Bill Compass can export your bills, payments and tags to a CSV file. That file goes wherever you send it and is then in your hands. The app does not upload it anywhere.</p>
 
   <h3>Diagnostics</h3>
   <p>The Diagnostics screen can copy a short report for pasting into a support email. It describes the app and the device — version, whether sync is on, how many records exist — and, in the app's own words, no bill names, amounts or notes are included. Nothing is sent automatically; you choose whether to share it.</p>
@@ -237,7 +237,7 @@ SUPPORT = f'''
     <dd>Touch and hold it and choose Skip Cycle. That moves the bill forward without recording money, and the skip is listed in History so the gap is explained.</dd>
 
     <dt>How do I back up my bills?</dt>
-    <dd>Settings → Backup → Export writes everything — bills, payments, tags and income — to a single CSV file you can email to yourself or keep in Files. Restore merges that file back by record, updating what it recognises and adding what is missing, without deleting anything.</dd>
+    <dd>Settings → Backup → Export writes everything — bills, payments and tags — to a single CSV file you can email to yourself or keep in Files. Restore merges that file back by record, updating what it recognises and adding what is missing, without deleting anything.</dd>
 
     <dt>I stopped a service but want to keep its history</dt>
     <dd>Archive the bill rather than deleting it. It leaves the Overview, the Calendar and reminders, keeps every payment recorded against it, and can be restored later from the Archived screen.</dd>
