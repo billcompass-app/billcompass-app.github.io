@@ -154,6 +154,11 @@ INDEX = f'''
     <p>Bill Compass has no account, no server of ours, and no analytics. Your bills live on your device and sync through <b>your own iCloud</b>, which we cannot read. Nothing is collected, and nothing is sold.</p>
   </div>
   <p class="lead">Add a bill on your phone and it is on your Mac. Appearance stays per device on purpose — a Mac on a desk and a phone in bed are entitled to different answers.</p>
+
+  <div class="pledge" style="border-left-color:var(--accent)">
+    <span class="stamp" style="color:var(--accent)">One-time purchase</span>
+    <p><b>Lifetime iCloud Sync — $7.99.</b> Bill Compass works fully on a single device. Keeping the same bills on your iPhone, iPad and Mac is the one thing that costs, and it is bought once — not a subscription. It unlocks on every device signed in to the same Apple Account.</p>
+  </div>
   <p><a href="privacy.html">Read the full privacy policy</a></p>
 </div></section>
 '''
@@ -173,7 +178,7 @@ PRIVACY = f'''
   <p>Nothing. Bill Compass does not gather usage data, device identifiers, crash reports, contacts, location or any other personal information, and it contains no analytics or advertising software.</p>
 
   <h3>Where your information lives</h3>
-  <p>Bills, payments and tags are stored on your device. If you are signed in to iCloud, they also sync through Apple's CloudKit to your <em>private</em> iCloud database, so the same bills appear on your other devices. That database belongs to your Apple Account. The developer has no access to it and no way to read what is in it.</p>
+  <p>Bills, payments and tags are stored on your device. If you have unlocked iCloud sync and are signed in to iCloud, they also sync through Apple's CloudKit to your <em>private</em> iCloud database, so the same bills appear on your other devices. That database belongs to your Apple Account. The developer has no access to it and no way to read what is in it.</p>
   <p>Settings — the theme, light or dark, the background, how bills are arranged, your reminder preferences — are stored on the device they were chosen on and are not synced.</p>
 
   <h3>Reminders</h3>
@@ -227,8 +232,17 @@ SUPPORT = f'''
     <dt>Tapping a bill does nothing. Is it broken?</dt>
     <dd>No — that is deliberate, so scrolling can never settle a bill by accident. Touch and hold a bill to record a payment, edit it or skip a cycle. On a Mac, right-click or double-click.</dd>
 
+    <dt>Do I have to pay to sync?</dt>
+    <dd>Syncing between devices is a one-time <b>Lifetime iCloud Sync</b> purchase of $7.99 — not a subscription. Everything else works without it, on one device. Because it is tied to your Apple Account, buying it once covers your iPhone, your iPad and your Mac.</dd>
+
+    <dt>I bought sync but nothing is syncing yet</dt>
+    <dd>Reopen the app. Bill Compass decides how to open your database when it launches, so a purchase made while it is running takes effect the next time you start it. Settings will say so after you buy.</dd>
+
+    <dt>I already bought it, but a new device says sync is off</dt>
+    <dd>Settings → iCloud → <b>Restore Purchase</b>, with the device signed in to the same Apple Account you bought it on. Nothing is charged twice.</dd>
+
     <dt>My bills have not appeared on my other device</dt>
-    <dd>Both devices need to be signed in to the same Apple Account with iCloud Drive on. Syncing is handled by iCloud and is not instant — it can take a few minutes, and a device that has been asleep may need the app opened once. On iPhone and iPad you can pull down on the bill list to prompt a refresh. Settings → Diagnostics shows whether sync is on and when data was last sent and received.</dd>
+    <dd>First, check sync is unlocked on both devices — Settings → iCloud. Then both need to be signed in to the same Apple Account with iCloud Drive on. Syncing is handled by iCloud and is not instant — it can take a few minutes, and a device that has been asleep may need the app opened once. On iPhone and iPad you can pull down on the bill list to prompt a refresh. Settings → Diagnostics shows whether sync is on and when data was last sent and received.</dd>
 
     <dt>How do I record a payment?</dt>
     <dd>Touch and hold the bill and choose Record Payment. A full payment moves the bill on to its next cycle; a partial payment leaves it due and shows what is still owed. You can also record a payment from a day in the Calendar.</dd>
@@ -259,7 +273,7 @@ PAGES = [
     ("privacy.html", "Privacy Policy — Bill Compass",
      "Bill Compass collects nothing. No account, no analytics, no third-party code; your bills stay on your devices and in your own iCloud.", "Privacy", PRIVACY),
     ("support.html", "Support — Bill Compass",
-     "Help with Bill Compass: recording payments, iCloud syncing, backups, reminders and how to get in touch.", "Support", SUPPORT),
+     "Help with Bill Compass: recording payments, iCloud sync and the Lifetime Sync purchase, backups, reminders and how to get in touch.", "Support", SUPPORT),
 ]
 
 if __name__ == "__main__":
