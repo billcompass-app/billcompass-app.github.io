@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iCloud Sync — Bill Compass</title>
+<meta name="description" content="Lifetime iCloud Sync keeps the same bills on your iPhone, iPad and Mac through your own iCloud — a one-time $7.99 purchase.">
+<link rel="icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/icon.png" alt=""> Bill Compass</a>
+  <nav><a href="features.html">Features</a><a href="guide.html">How to Use</a><a href="sync.html" aria-current="page">Sync</a><a href="faq.html">FAQ</a><a href="support.html">Support</a></nav>
+</div></header>
+<section><div class="wrap">
+  <h1 style="font-size:clamp(30px,5.5vw,44px);margin-top:0">iCloud Sync</h1>
+  <p class="lead">The same bills on your iPhone, iPad and Mac — through your own iCloud, which only you can read.</p>
+
+  <div class="pledge" style="border-left-color:var(--accent)">
+    <span class="stamp" style="color:var(--accent)">Lifetime iCloud Sync</span>
+    <p class="price">$7.99</p>
+    <p>One payment, no subscription. It unlocks sync on every device signed in to the same Apple Account. Everything else in Bill Compass works without it, on a single device.</p>
+  </div>
+
+  <h2>Turning it on</h2>
+  <ol class="steps">
+    <li>Make sure the device is signed in to iCloud with <b>iCloud Drive</b> on.</li>
+    <li>Open <span class="path">Settings → iCloud</span> and choose <b>Unlock Sync</b>.</li>
+    <li>Quit and reopen Bill Compass. The app chooses its database as it launches, so sync starts on the next launch, and Settings will say so until then.</li>
+    <li>On each of your other devices, open <span class="path">Settings → iCloud</span> and choose <b>Restore Purchase</b>, then reopen the app. You are not charged again.</li>
+  </ol>
+  <div class="tip"><b>Started on one device already?</b> When Bill Compass finds it is already in use on your iCloud account — say, you open the Mac app after a year on your phone — it tells you so, and offers to turn sync on, rather than leaving you with an empty screen and a guess.</div>
+
+  <h2>How it works</h2>
+  <p>Your bills are stored on each device and mirrored through Apple's CloudKit into the <em>private</em> database of your own iCloud account. There is no Bill Compass server and no account to make; the developer cannot see your data. See the <a href="privacy.html">privacy policy</a>.</p>
+  <p>What syncs: bills, payments, tags and payment methods. What stays on each device: appearance, background, bill layout, reminder settings and the screen the app opens on.</p>
+  <p>iCloud delivers changes in the background, usually within a minute or two. To ask for them straight away, pull down on the bill list on iPhone and iPad, or use <b>Sync Now</b> in the Mac toolbar.</p>
+
+  <h2>If something has not synced</h2>
+  <ul class="plain">
+    <li>Check <span class="path">Settings → iCloud</span> on <em>both</em> devices says sync is on.</li>
+    <li>Both must be signed in to the same Apple Account, with iCloud Drive on.</li>
+    <li>A device that has been asleep may need the app opened once to catch up.</li>
+    <li><span class="path">Settings → Diagnostics</span> shows whether sync is running and when data was last sent and received.</li>
+    <li>Still stuck? <a href="support.html">Get in touch</a>, and include the Diagnostics report.</li>
+  </ul>
+</div></section>
+<footer><div class="wrap">
+  <span>Bill Compass — for iPhone, iPad and Mac</span>
+  <nav><a href="features.html">Features</a><a href="guide.html">How to Use</a><a href="sync.html">iCloud Sync</a><a href="faq.html">FAQ</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+</div></footer>
+</body>
+</html>
