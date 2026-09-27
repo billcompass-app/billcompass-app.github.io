@@ -27,8 +27,8 @@ icon changes.
 
 `assets/screens/` holds the screenshots. They are taken from a Debug build
 launched with `-BCScreenshotMode -launchSection <screen>` (and
-`-billLayout grid|stickie` on iPad), which seeds a made-up household into a
-store of its own, then scaled to 600px (iPhone) or 1100px (iPad) JPEGs.
+`-billLayout stickie` on iPad, `-billLayout grid` on the Mac), which seeds a made-up household into a
+store of its own, then scaled to 600px (iPhone), 1100px (iPad) or 1400px (Mac) JPEGs.
 
 `.nojekyll` tells Pages to serve the files as they are rather than running
 them through Jekyll.

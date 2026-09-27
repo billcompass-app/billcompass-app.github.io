@@ -19,7 +19,7 @@ import os, shutil
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DOCS = ROOT
 SUPPORT_EMAIL = "billcompass@hotmail.com"   # swap once the account exists
-UPDATED = "6 September 2026"
+UPDATED = "27 September 2026"
 
 CSS = """/* Bill Compass — site styles.
    The palette is the app's own: SurfaceBackground, SurfaceCard, the coral
@@ -370,9 +370,9 @@ FEATURES = f'''
 
 <section id="layouts"><div class="wide">
   <h2>Three layouts on iPad and Mac</h2>
-  <p class="lead" style="max-width:62ch">Choose how the Overview arranges your bills in Settings → Appearance → Bill Layout: <b>Tile</b>, a list of rows; <b>Grid</b>, cards side by side; or <b>Stickie</b>, a board of paper notes. The iPhone keeps the list, which suits its width best.</p>
-  <div class="gallery" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
-    {shot("ipad-grid", "Bills arranged as a grid of cards on iPad", "Grid", tablet=True)}
+  <p class="lead" style="max-width:62ch">Choose how the Overview arranges your bills in Settings → Appearance → Bill Layout: <b>Tile</b>, a list of rows; <b>Grid</b>, bills side by side wherever there is room for two columns — a Mac window, or an iPad held sideways; or <b>Stickie</b>, a board of paper notes. The iPhone keeps the list, which suits its width best.</p>
+  <div class="gallery" style="grid-template-columns:repeat(2,minmax(0,1fr));max-width:860px;margin-left:auto;margin-right:auto">
+    <div style="grid-column:1/-1;margin-bottom:10px">{shot("mac-grid", "Bills arranged in two columns on the Mac", "Grid, on the Mac", tablet=True)}</div>
     {shot("ipad-stickie", "Bills arranged as paper notes on iPad", "Stickie", tablet=True)}
     {shot("ipad-calendar", "The Calendar on iPad, with each bill named on its day", "Calendar on iPad", tablet=True)}
   </div>
@@ -409,7 +409,7 @@ PRIVACY = f'''
   <p>Nothing. Bill Compass does not gather usage data, device identifiers, crash reports, contacts, location or any other personal information, and it contains no analytics or advertising software.</p>
 
   <h3>Where your information lives</h3>
-  <p>Bills, payments and tags are stored on your device. If you have unlocked iCloud sync and are signed in to iCloud, they also sync through Apple's CloudKit to your <em>private</em> iCloud database, so the same bills appear on your other devices. That database belongs to your Apple Account. The developer has no access to it and no way to read what is in it.</p>
+  <p>Bills, payments, tags and payment methods are stored on your device. If you have unlocked iCloud sync and are signed in to iCloud, they also sync through Apple's CloudKit to your <em>private</em> iCloud database, so the same bills appear on your other devices. That database belongs to your Apple Account. The developer has no access to it and no way to read what is in it.</p>
   <p>Settings — the theme, light or dark, the background, how bills are arranged, your reminder preferences — are stored on the device they were chosen on and are not synced.</p>
 
   <h3>Reminders</h3>
@@ -419,7 +419,7 @@ PRIVACY = f'''
   <p>If you choose a photo as the app's background, it is copied into the app's own storage on that device and used only to draw the background. It is not synced and never leaves the device.</p>
 
   <h3>Backups you make yourself</h3>
-  <p>Bill Compass can export your bills, payments and tags to a CSV file. That file goes wherever you send it and is then in your hands. The app does not upload it anywhere.</p>
+  <p>Bill Compass can export your bills, payments, tags and payment methods to a CSV file. That file goes wherever you send it and is then in your hands. The app does not upload it anywhere.</p>
 
   <h3>Diagnostics</h3>
   <p>The Diagnostics screen can copy a short report for pasting into a support email. It describes the app and the device — version, whether sync is on, how many records exist — and, in the app's own words, no bill names, amounts or notes are included. Nothing is sent automatically; you choose whether to share it.</p>
@@ -610,7 +610,7 @@ GUIDE = f'''
 
 <section id="backup">
   <h2>Backup and restore</h2>
-  <p><span class="path">Settings → Backup → Export Backup…</span> writes your bills, payments and tags to a single CSV file. Save it to Files, email it to yourself, or keep it anywhere you like.</p>
+  <p><span class="path">Settings → Backup → Export Backup…</span> writes your bills, payments, tags and payment methods to a single CSV file. Save it to Files, email it to yourself, or keep it anywhere you like.</p>
   <p><span class="path">Restore From Backup…</span> reads that file back. It merges by record — updating what it recognises and adding what is missing — and never deletes anything already in the app.</p>
 </section>
 
@@ -737,7 +737,7 @@ FAQ = f'''
   <h2 style="margin-top:48px">Your data</h2>
   <dl>
     <dt>How do I back up my bills?</dt>
-    <dd>Settings → Backup → Export Backup… writes everything — bills, payments and tags — to a single CSV file you can email to yourself or keep in Files. Restore From Backup… merges that file back by record, updating what it recognises and adding what is missing, without deleting anything.</dd>
+    <dd>Settings → Backup → Export Backup… writes everything — bills, payments, tags and payment methods — to a single CSV file you can email to yourself or keep in Files. Restore From Backup… merges that file back by record, updating what it recognises and adding what is missing, without deleting anything.</dd>
 
     <dt>Does Bill Compass connect to my bank?</dt>
     <dd>No. It never sees your bank, never moves money, and makes no network requests of its own. It keeps the record you give it.</dd>
